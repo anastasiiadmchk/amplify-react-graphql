@@ -205,6 +205,15 @@
         }
       }
     },
+    "apiamplifyreactgraphql": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-amplify45780a7040134-staging-85842-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "env": "staging"
+        }
+      }
+    },
     "UpdateRolesWithIDPFunction": {
       "DependsOn": [
         "AuthRole",
